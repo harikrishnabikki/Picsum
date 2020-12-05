@@ -18,7 +18,7 @@ class NetworkingService {
     let session = URLSession.shared
     
     func getPicsum(success successBlock: @escaping (GetPicsumResponse) -> Void) {
-        guard let url = URL(string: "https://raw.githubusercontent.com/harikrishnabikki/Picsum/main/Picsum/Data?token=AE3REHU5XFQNGLT4IKZYP7K7ZLKD6") else { return }
+        guard let url = URL(string: "https://my-json-server.typicode.com/typicode/demo/db") else { return }
         let request = URLRequest(url: url)
         
         session.dataTask(with: request) { (data, _, _) in
