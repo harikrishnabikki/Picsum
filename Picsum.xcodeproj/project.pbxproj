@@ -16,6 +16,9 @@
 		275412ED2579B79E00256DA3 /* PicsumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275412EC2579B79E00256DA3 /* PicsumTests.swift */; };
 		275412F82579B79E00256DA3 /* PicsumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275412F72579B79E00256DA3 /* PicsumUITests.swift */; };
 		27FAF6BF2579F2E2002D63B8 /* PicsumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF6BE2579F2E2002D63B8 /* PicsumCell.swift */; };
+		27FAF6C42579F70A002D63B8 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF6C32579F70A002D63B8 /* NetworkingService.swift */; };
+		27FAF6C92579F884002D63B8 /* getPicsumResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF6C82579F884002D63B8 /* getPicsumResponse.swift */; };
+		27FAF6CE257AFD9E002D63B8 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF6CD257AFD9E002D63B8 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		275412F72579B79E00256DA3 /* PicsumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumUITests.swift; sourceTree = "<group>"; };
 		275412F92579B79E00256DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27FAF6BE2579F2E2002D63B8 /* PicsumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumCell.swift; sourceTree = "<group>"; };
+		27FAF6C32579F70A002D63B8 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		27FAF6C82579F884002D63B8 /* getPicsumResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getPicsumResponse.swift; sourceTree = "<group>"; };
+		27FAF6CD257AFD9E002D63B8 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,9 @@
 				275412D52579B79D00256DA3 /* AppDelegate.swift */,
 				275412D72579B79D00256DA3 /* SceneDelegate.swift */,
 				275412D92579B79D00256DA3 /* ViewController.swift */,
+				27FAF6C32579F70A002D63B8 /* NetworkingService.swift */,
+				27FAF6CD257AFD9E002D63B8 /* API.swift */,
+				27FAF6C82579F884002D63B8 /* getPicsumResponse.swift */,
 				275412DB2579B79D00256DA3 /* Main.storyboard */,
 				27FAF6BE2579F2E2002D63B8 /* PicsumCell.swift */,
 				275412DE2579B79E00256DA3 /* Assets.xcassets */,
@@ -261,10 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27FAF6C42579F70A002D63B8 /* NetworkingService.swift in Sources */,
 				27FAF6BF2579F2E2002D63B8 /* PicsumCell.swift in Sources */,
+				27FAF6C92579F884002D63B8 /* getPicsumResponse.swift in Sources */,
 				275412DA2579B79D00256DA3 /* ViewController.swift in Sources */,
 				275412D62579B79D00256DA3 /* AppDelegate.swift in Sources */,
 				275412D82579B79D00256DA3 /* SceneDelegate.swift in Sources */,
+				27FAF6CE257AFD9E002D63B8 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

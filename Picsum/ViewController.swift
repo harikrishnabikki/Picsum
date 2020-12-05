@@ -13,16 +13,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        NetworkingService.shared.getImgurs { (response) in
-//            self.imgurs = response.imgurs
-//            self.collectionView.reloadData()
-//        }
+
+        NetworkingService.shared.getPicsum { (response) in
+            print("Got here")
+        }
         
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        //imageCache.removeAllObjects()
+      
         
     }
     
