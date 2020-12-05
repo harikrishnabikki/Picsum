@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         NetworkingService.shared.getPicsum { (response) in
-            print("Got here")
+            print(response.picsum)
         }
         
     }

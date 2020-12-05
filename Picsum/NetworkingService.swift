@@ -18,34 +18,16 @@ class NetworkingService {
     let session = URLSession.shared
     
     func getPicsum(success successBlock: @escaping (GetPicsumResponse) -> Void) {
-        guard let url = URL(string: "https://my-json-server.typicode.com/typicode/demo/db") else { return }
+        guard let url = URL(string: "https://raw.githubusercontent.com/harikrishnabikki/Picsum/main/Picsum/Data?token=AE3REHWQOVJPGCONTNA3WO27ZLV5Y") else { return }
         let request = URLRequest(url: url)
         
         session.dataTask(with: request) { (data, _, _) in
             guard let data = data else { return }
-
-            print(type(of:data))
             
             do {
-                guard let json = try? JSONSerialization.jsonObject(with: data, options: []) as? JSON else { print("Empty");  return }
-                print(json)
-                print(type(of:json))
-                
-                
-//                do {
-//                    if let result = try JSONDecoder().decode([API].self, from: data).first {
-//                        print(result.id ?? 22)
-//                        print(result.author ?? "Sample")
-//                    }
-//
-//                } catch {
-//                    print(error)
-//                }
-
-                
-                
-               // let getPicsumResponse = try GetPicsumResponse(json: json)
-               // successBlock(getPicsumResponse)
+                guard let json = try? JSONSerialization.jsonObject(with: data, options: []) as? JSON else { print("Wrong"); return }
+                let getPicsumResponse = try GetPicsumResponse(json: json)
+                successBlock(getPicsumResponse)
             } catch{
                 print("Failed to load: ")
             }
