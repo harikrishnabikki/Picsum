@@ -9,6 +9,7 @@ import UIKit
 
 struct Picsum {
     
+    // Private 
     private let id: String
     private let download_url: String
     
@@ -35,13 +36,17 @@ struct Picsum {
         self.download_url = download_url
         
     }
+ 
+    //MARK:- Image Caching Check
     
-    
+    // function to download the image. Async call
     func image(completion: @escaping (UIImage) -> Void) {
+        // Check if image already exist in cache
         if let image = imageCache.image(forKey: id) {
             completion(image)
         } else {
             NetworkingService.shared.downloadImage(fromLink: download_url) { (image) in
+                // caching the image for the id value once the image is fetched.
                 imageCache.add(image, forKey: self.id)
                 completion(image)
             }

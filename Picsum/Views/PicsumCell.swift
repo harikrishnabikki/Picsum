@@ -15,6 +15,7 @@ class PicsumCell: UICollectionViewCell {
     
     
     func configure(with picsum: Picsum){
+        // assign the value to the appropriate cell
         author.text = picsum.author
         picsum.image { (image) in
             self.imageView.image = image
@@ -22,6 +23,7 @@ class PicsumCell: UICollectionViewCell {
         
     }
     
+    // To avoid replacing the image and text when scrolling
     override func prepareForReuse() {
         author.text = nil
         imageView.image = nil

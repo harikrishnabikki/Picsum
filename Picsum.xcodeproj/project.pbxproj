@@ -61,6 +61,7 @@
 		27FAF6D2257B1ED3002D63B8 /* Picsum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picsum.swift; sourceTree = "<group>"; };
 		27FAF6DD257B21BB002D63B8 /* MyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyError.swift; sourceTree = "<group>"; };
 		27FAF6E8257CB2CB002D63B8 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		27FAF77E257D89B1002D63B8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +121,7 @@
 				27FAF772257D0358002D63B8 /* Views */,
 				275412DE2579B79E00256DA3 /* Assets.xcassets */,
 				275412E32579B79E00256DA3 /* Info.plist */,
+				27FAF77E257D89B1002D63B8 /* README.md */,
 			);
 			path = Picsum;
 			sourceTree = "<group>";
