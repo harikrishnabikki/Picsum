@@ -18,19 +18,21 @@ class NetworkingService {
     let session = URLSession.shared
     
     func getPicsum(success successBlock: @escaping (GetPicsumResponse) -> Void) {
-        guard let url = URL(string: "https://raw.githubusercontent.com/harikrishnabikki/Picsum/main/Picsum/Data?token=AE3REHWQOVJPGCONTNA3WO27ZLV5Y") else { return }
+        guard let url = URL(string: "https://raw.githubusercontent.com/harikrishnabikki/Zinq-Code-Test-v3/master/data.json") else { return }
         let request = URLRequest(url: url)
         
         session.dataTask(with: request) { (data, _, _) in
             guard let data = data else { return }
-            
             do {
-                guard let json = try? JSONSerialization.jsonObject(with: data, options: []) as? JSON else { print("Wrong"); return }
+                guard let json = try? JSONSerialization.jsonObject(with: data, options: []) as? JSON else { return }
                 let getPicsumResponse = try GetPicsumResponse(json: json)
-                successBlock(getPicsumResponse)
+                DispatchQueue.main.async {
+                    successBlock(getPicsumResponse)
+                }
             } catch{
                 print("Failed to load: ")
             }
         }.resume()
     }
 }
+

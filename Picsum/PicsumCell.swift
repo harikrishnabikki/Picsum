@@ -11,11 +11,17 @@ class PicsumCell: UICollectionViewCell {
     
     
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var author: UILabel!
     
     
-    func configure(){
+    func configure(with picsum: Picsum){
+        author.text = picsum.author
+        print(picsum.author)
         
     }
     
-    
+    override func prepareForReuse() {
+        author.text = nil
+        imageView.image = nil
+    }
 }

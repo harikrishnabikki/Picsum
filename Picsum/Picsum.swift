@@ -5,7 +5,7 @@
 //  Created by Hari Krishna Bikki on 5/12/20.
 //
 
-import Foundation
+import UIKit
 
 struct Picsum {
     

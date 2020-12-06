@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1hn-Zf-zld">
-                                <rect key="frame" x="0.0" y="88" width="205" height="175"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="B2T-s5-dPR">
@@ -29,7 +29,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PicsumCell" id="O8T-o5-76a" customClass="PicsumCell" customModule="Picsum" customModuleProvider="target">
-                                        <rect key="frame" x="10.5" y="0.0" width="184" height="170"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="184" height="170"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YxK-fQ-reO">
                                             <rect key="frame" x="0.0" y="0.0" width="184" height="170"/>
@@ -38,9 +38,19 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YSh-xA-mLK">
                                                     <rect key="frame" x="8" y="8" width="168" height="154"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncN-KO-aoz">
+                                                    <rect key="frame" x="8" y="128" width="168" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="ncN-KO-aoz" secondAttribute="bottom" constant="8" id="2jS-N8-cCw"/>
                                                 <constraint firstAttribute="trailing" secondItem="YSh-xA-mLK" secondAttribute="trailing" constant="8" id="4EF-Yo-SdX"/>
+                                                <constraint firstItem="ncN-KO-aoz" firstAttribute="top" secondItem="YxK-fQ-reO" secondAttribute="top" constant="128" id="Bl8-P6-Vq5"/>
+                                                <constraint firstAttribute="trailing" secondItem="ncN-KO-aoz" secondAttribute="trailing" constant="8" id="EV0-y2-KPS"/>
+                                                <constraint firstItem="ncN-KO-aoz" firstAttribute="leading" secondItem="YxK-fQ-reO" secondAttribute="leading" constant="8" id="HXO-Um-XiQ"/>
                                                 <constraint firstItem="YSh-xA-mLK" firstAttribute="leading" secondItem="YxK-fQ-reO" secondAttribute="leading" constant="8" id="J0r-6T-RrD"/>
                                                 <constraint firstAttribute="bottom" secondItem="YSh-xA-mLK" secondAttribute="bottom" constant="8" id="pdq-nC-G92"/>
                                                 <constraint firstItem="YSh-xA-mLK" firstAttribute="top" secondItem="YxK-fQ-reO" secondAttribute="top" constant="8" id="xO4-rh-you"/>
@@ -48,16 +58,23 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="184" height="170"/>
                                         <connections>
+                                            <outlet property="author" destination="ncN-KO-aoz" id="2a5-ym-GG8"/>
                                             <outlet property="imageView" destination="YSh-xA-mLK" id="asM-li-Gs4"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Pmq-fa-ECW"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Picsum" id="kga-fT-btc"/>
+                    <connections>
+                        <outlet property="collectionView" destination="1hn-Zf-zld" id="DVs-Gx-EhR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

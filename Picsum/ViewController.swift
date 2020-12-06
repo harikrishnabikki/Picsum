@@ -11,11 +11,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
 
+    var picsum = [Picsum]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         NetworkingService.shared.getPicsum { (response) in
-            print(response.picsum)
+            self.picsum = response.picsum
+            self.collectionView.reloadData()
         }
         
     }
@@ -35,12 +37,12 @@ extension ViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return picsum.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PicsumCell", for: indexPath) as? PicsumCell else { return UICollectionViewCell() }
-        cell.configure()
+        cell.configure(with: picsum[indexPath.item])
         return cell
     }
 
