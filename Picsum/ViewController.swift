@@ -44,13 +44,7 @@ extension ViewController: UICollectionViewDataSource {
         cell.configure(with: picsum[indexPath.item])
         return cell
     }
+    
 
 }
 
-
-
-//extension ViewController: UICollectionViewDelegateFlowLayout {
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: 200.0, height: 200.0)
-//    }
-//}
