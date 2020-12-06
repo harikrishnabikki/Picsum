@@ -111,18 +111,14 @@
 		275412D42579B79D00256DA3 /* Picsum */ = {
 			isa = PBXGroup;
 			children = (
-				275412D52579B79D00256DA3 /* AppDelegate.swift */,
-				275412D72579B79D00256DA3 /* SceneDelegate.swift */,
-				275412D92579B79D00256DA3 /* ViewController.swift */,
-				27FAF6C32579F70A002D63B8 /* NetworkingService.swift */,
-				27FAF6E8257CB2CB002D63B8 /* ImageCache.swift */,
-				27FAF6D2257B1ED3002D63B8 /* Picsum.swift */,
-				27FAF6C82579F884002D63B8 /* GetPicsumResponse.swift */,
-				27FAF6DD257B21BB002D63B8 /* MyError.swift */,
-				275412DB2579B79D00256DA3 /* Main.storyboard */,
-				27FAF6BE2579F2E2002D63B8 /* PicsumCell.swift */,
+				27FAF75C257D0285002D63B8 /* Delegates */,
+				27FAF760257D02DF002D63B8 /* View Controllers */,
+				27FAF768257D030F002D63B8 /* Network */,
+				27FAF764257D02FF002D63B8 /* Models */,
+				27FAF770257D033D002D63B8 /* Errors */,
+				27FAF771257D034B002D63B8 /* Storyboards */,
+				27FAF772257D0358002D63B8 /* Views */,
 				275412DE2579B79E00256DA3 /* Assets.xcassets */,
-				275412E02579B79E00256DA3 /* LaunchScreen.storyboard */,
 				275412E32579B79E00256DA3 /* Info.plist */,
 			);
 			path = Picsum;
@@ -144,6 +140,74 @@
 				275412F92579B79E00256DA3 /* Info.plist */,
 			);
 			path = PicsumUITests;
+			sourceTree = "<group>";
+		};
+		27FAF75C257D0285002D63B8 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				275412D52579B79D00256DA3 /* AppDelegate.swift */,
+				275412D72579B79D00256DA3 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		27FAF760257D02DF002D63B8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				275412D92579B79D00256DA3 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		27FAF764257D02FF002D63B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				27FAF6D2257B1ED3002D63B8 /* Picsum.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		27FAF768257D030F002D63B8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				27FAF6C32579F70A002D63B8 /* NetworkingService.swift */,
+				27FAF76C257D0332002D63B8 /* Data Support */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		27FAF76C257D0332002D63B8 /* Data Support */ = {
+			isa = PBXGroup;
+			children = (
+				27FAF6E8257CB2CB002D63B8 /* ImageCache.swift */,
+				27FAF6C82579F884002D63B8 /* GetPicsumResponse.swift */,
+			);
+			path = "Data Support";
+			sourceTree = "<group>";
+		};
+		27FAF770257D033D002D63B8 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				27FAF6DD257B21BB002D63B8 /* MyError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		27FAF771257D034B002D63B8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				275412DB2579B79D00256DA3 /* Main.storyboard */,
+				275412E02579B79E00256DA3 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		27FAF772257D0358002D63B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27FAF6BE2579F2E2002D63B8 /* PicsumCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
