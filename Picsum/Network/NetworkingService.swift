@@ -14,13 +14,12 @@ class NetworkingService {
     
     static let shared = NetworkingService()
     private init() {}
-    
+    private let limit = 10
     let session = URLSession.shared
     
-    func getPicsum(success successBlock: @escaping (GetPicsumResponse) -> Void) {
-        let initPage = 1
-            //let pageSize = 10
-        let builtUrl = "\("https://picsum.photos/v2/list?page=")\(String(initPage))\("&limit=100")"
+    
+    func getPicsum(pageNumber: Int = 1, shouldPage:Bool = false, success successBlock: @escaping (GetPicsumResponse) -> Void) {
+        let builtUrl = "\("https://picsum.photos/v2/list?page=")\(String(pageNumber))\("&limit=100")"
         guard let url = URL(string:builtUrl ) else { return }
         let request = URLRequest(url: url)
     

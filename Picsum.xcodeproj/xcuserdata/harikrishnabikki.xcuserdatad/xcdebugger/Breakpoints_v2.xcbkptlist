@@ -3,4 +3,102 @@
    uuid = "639A4877-8D64-44F5-AB41-1C2B9B87CC0B"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CAB52B24-9AB5-49BA-B799-3A950DB2B7CF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Picsum/Network/NetworkingService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "getPicsum(pageNumber:shouldPage:success:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D964C53B-7198-4CD5-9119-C3C249F7A5F0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Picsum/Network/NetworkingService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "getPicsum(pageNumber:shouldPage:success:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52D62F6A-D675-405B-8BA2-DACF06ABC638"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Picsum/Network/NetworkingService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "downloadImage(fromLink:success:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "52D62F6A-D675-405B-8BA2-DACF06ABC638 - 426613d74ecfa44c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Picsum.NetworkingService.downloadImage(fromLink: Swift.String, success: (__C.UIImage) -&gt; ()) -&gt; ()"
+                  moduleName = "Picsum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/harikrishnabikki/Local-Drive/GitHub/Picsum/Picsum/Network/NetworkingService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "375">
+               </Location>
+               <Location
+                  uuid = "52D62F6A-D675-405B-8BA2-DACF06ABC638 - f0653f58f7d65a1f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Picsum.NetworkingService.downloadImage(fromLink: Swift.String, success: (__C.UIImage) -&gt; ()) -&gt; ()"
+                  moduleName = "Picsum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/harikrishnabikki/Local-Drive/GitHub/Picsum/Picsum/Network/NetworkingService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "227">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A6D1A559-774F-4BA4-B510-E6D97B234B74"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Picsum/Network/NetworkingService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "downloadImage(fromLink:success:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
