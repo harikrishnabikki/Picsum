@@ -16,7 +16,9 @@ class PicsumCell: UICollectionViewCell {
     
     func configure(with picsum: Picsum){
         author.text = picsum.author
-        print(picsum.author)
+        picsum.image { (image) in
+            self.imageView.image = image
+        }
         
     }
     

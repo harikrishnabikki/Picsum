@@ -34,5 +34,18 @@ class NetworkingService {
             }
         }.resume()
     }
+    
+    
+    func downloadImage(fromLink link: String, success successBlock: @escaping (UIImage) -> Void) {
+        guard let url = URL(string: link) else { return }
+        session.dataTask(with: url) { (data, _, _) in
+            guard let data = data,
+                let image = UIImage(data: data)
+                else { return }
+            DispatchQueue.main.async {
+                successBlock(image)
+            }
+        }.resume()
+    }
 }
 

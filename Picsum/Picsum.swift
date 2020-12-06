@@ -35,4 +35,18 @@ struct Picsum {
         self.download_url = download_url
         
     }
+    
+    
+    func image(completion: @escaping (UIImage) -> Void) {
+        if let image = imageCache.image(forKey: id) {
+            completion(image)
+        } else {
+            NetworkingService.shared.downloadImage(fromLink: download_url) { (image) in
+                imageCache.add(image, forKey: self.id)
+                completion(image)
+            }
+        }
+    }
+    
+    
 }
